@@ -1,0 +1,70 @@
+-- phpMyAdmin SQL Dump
+-- version 5.1.1
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1:3306
+-- Generation Time: Jun 30, 2022 at 04:23 AM
+-- Server version: 8.0.27
+-- PHP Version: 7.4.26
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `eass`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `email_template`
+--
+
+DROP TABLE IF EXISTS `email_template`;
+CREATE TABLE IF NOT EXISTS `email_template` (
+  `e_t_id` int NOT NULL AUTO_INCREMENT,
+  `Template_name` varchar(500) NOT NULL,
+  `c_id` int NOT NULL COMMENT 'Attribute id type=13',
+  `s_c_id` int NOT NULL COMMENT 'Attribute id type=14',
+  `template` text NOT NULL,
+  `header` int NOT NULL COMMENT '1= include, 0 = not incude',
+  `footer` int NOT NULL COMMENT '1= include, 0 = not incude',
+  `signature` int NOT NULL COMMENT '1= include, 0 = not incude',
+  `type` int NOT NULL COMMENT '1 - Email, 2- SMS',
+  `status` int NOT NULL DEFAULT '1' COMMENT '1 = active, 0=not active',
+  `deleted` int NOT NULL COMMENT '0-active,1-deactive',
+  `created_timestamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`e_t_id`)
+) ENGINE=MyISAM AUTO_INCREMENT=15 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Dumping data for table `email_template`
+--
+
+INSERT INTO `email_template` (`e_t_id`, `Template_name`, `c_id`, `s_c_id`, `template`, `header`, `footer`, `signature`, `type`, `status`, `deleted`, `created_timestamp`) VALUES
+(1, 'Lead Mail Send To Customer', 181, 188, '<p>We are recived your Lead.</p><p>Your Lead Successfully Recived to EASS.</p><p>We will Respond you as soon as possible.</p><p></p><p>Thank you</p>', 1, 1, 1, 1, 1, 0, '2022-06-07 05:10:08'),
+(2, 'Send Invoice To Customer', 182, 184, '<p>Hello Dear {:name:},</p><p>Here It is Your Invoice..........</p>', 0, 0, 0, 1, 1, 0, '2022-06-07 05:12:35'),
+(3, 'TDS', 198, 186, '<p>This is reminder for your pending TDS.....</p>', 1, 1, 0, 1, 1, 0, '2022-06-09 08:26:50'),
+(4, 'Cover-Letter', 198, 196, '<p>Cover letter</p>', 1, 1, 1, 1, 1, 0, '2022-06-13 06:44:13'),
+(5, 'Send Refund To Customer', 198, 199, '<p>Hello Dear {:name:},</p><p>Here It is Your Refund Receipt.......... </p>', 0, 0, 0, 1, 1, 0, '2022-06-14 08:48:02'),
+(6, 'Send Payment To Customer', 198, 200, '<p>Hello Dear {:name:},</p><p>Here It is Your Payment Receipt.......... </p>', 0, 0, 0, 1, 1, 0, '2022-06-14 08:48:35'),
+(7, 'Payment Reminder To Customer', 198, 214, '<p>Hello Dear {:name:},</p><p>This message is for informing you to pay your pending amount Rs. {:amount:}  INR/-.Your process is on hold, request you to please contact EASS asap. </p>', 1, 1, 1, 1, 1, 0, '2022-06-22 06:39:54'),
+(8, 'Send Service-status Change Mail', 215, 216, '<p>Hello Dear {:name:},</p><p>Your applied service/s status is as follows:</p><p>{:table:}</p><p>In case you are not personally coming to collect the documents, we would like to confirm if your documents should be delivered to the below address, please let us know.</p><p>Dutyfree Shop Ltd. D-73/1, TTC Industrial Area, MIDC Turbhe, Navi Mumbai - 400 705 Tel: 022-66264999</p><p>Also kindly transfer/deposit balance amount, if any, to any of our below accounts:</p>', 0, 0, 0, 1, 1, 0, '2022-06-25 06:37:46'),
+(9, 'Enquiry', 217, 218, '<p></p><p>Hello dear {:name:},</p><p></p><p><strong>This is Enquiry mail</strong> </p>', 0, 0, 0, 1, 1, 0, '2022-06-25 06:53:13'),
+(10, 'Negotiation Stage', 219, 220, '<p></p><p>Hello dear {:name:},</p><p></p><p><strong>This is Negotiation Stage Mail</strong> </p>', 0, 0, 0, 1, 1, 0, '2022-06-25 06:55:26'),
+(11, 'Client could not decide till time', 221, 222, '<p></p><p>Hello dear {:name:},</p><p>This is mail about <strong>Client could not decide till time</strong> ..... </p>', 0, 0, 0, 1, 1, 0, '2022-06-25 06:56:12'),
+(12, 'Client are waiting for documents', 223, 224, '<p></p><p>Hello dear {:name:},</p><p></p><p>This is reminder for <strong>Client are waiting for documents</strong> </p>', 0, 0, 0, 1, 1, 0, '2022-06-25 06:57:29'),
+(13, 'Required pick up service', 225, 226, '<p></p><p>Hello dear {:name:},</p><p></p><p>This is mail of <strong>Required pick up service</strong> </p>', 0, 0, 0, 1, 1, 0, '2022-06-25 06:58:38'),
+(14, 'Not Interested', 225, 228, '<p></p><p>Hello dear {:name:},</p><p>This mail is for<strong> Not Interested</strong> status </p>', 0, 0, 0, 1, 1, 0, '2022-06-25 06:59:42');
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

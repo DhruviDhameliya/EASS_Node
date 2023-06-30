@@ -1,0 +1,191 @@
+﻿"branch_id","b_name","ip_address","company_name","email","mo_no","address","website_url","logo","state_id","deleted","b_e_host","b_e_port","b_e_username","b_e_password","b_email_template_header","b_email_template_footer","b_email_signature","c_term_condition","b_hsn_code","b_gstno","b_bank_details","b_nongst_bank_deatils","r_link","arn_no","gst_bankdetails","ngst_bankdetails","general_bankdetails","created_timestamp","row_no","state_name"
+"49","Navsari","http://192.168.1.204:3000/bran","Jivan Pvt Ltd","abc@gmail.com","98756445","<p>dsdsads</p>
+","oko","1665561883914.jpg","136","0","","","","","<p>&nbsp</p>","<p>&nbsp</p>","<p>&nbsp</p>","<p>&nbsp</p>","0","2135468790","<p>&nbsp</p>","<p>&nbsp</p>","http://192.168.1.204","","","","","2022-10-12T08:04:43.000Z","1","Bihar"
+"47","Main_branch","192.168.1.204:3000","Tripura_co_pvt","Tripura_co_pvt@gmail","15151515","<p>Tripura</p>
+","www.tripura.com","1665561787396.jpg","155","0","","","","","<p>&nbsp</p>","<p>&nbsp</p>","<p>&nbsp</p>","<p>&nbsp</p>","0","2135468790","<p>&nbsp</p>","<p>&nbsp</p>","","","","","","2022-10-12T08:03:07.000Z","2","Tripura"
+"44","abc","192.168.1.204:000","punjab com","surat@gmail.com","1593263","<p>hjkhnknjk</p>
+","branch.com","1664943529923.jpg","131","0","","","","","<p>&nbsp</p>","<p>&nbsp</p>","<p>&nbsp</p>","<p>&nbsp</p>","0","132564","<p>&nbsp</p>","<p>&nbsp</p>","http://192.168.1.204","","<p>fg</p>
+","<p>fdh</p>
+","<p>fdh</p>
+","2022-10-05T04:18:49.000Z","3","Delhi"
+"43","Vadodara","192.168.1.204:3000","Jivan Pvt Ltd","punjab@gmail.vcom","98989898","<p>21356</p>
+","www.jivan.com","1664943389823.jpg","152","0","","","","","<p>&nbsp</p>","<p>&nbsp</p>","<p>&nbsp</p>","<p>&nbsp</p>","0","132564999","<p>&nbsp</p>","<p>&nbsp</p>","http://192.168.1.204","","","","","2022-10-05T04:16:29.000Z","4","Sikkim"
+"42","Navsari","192.168.1.204:000","Branch123 pvt ltd","heelo@gmail.com","987654321","<p>fgdff</p>
+","http://192.168.1.204:3000/branch","1664943344006.jpg","138","0","","","","","<p>&nbsp</p>","<p>&nbsp</p>","<p>&nbsp</p>","<p>&nbsp</p>","0","132564","<p>&nbsp</p>","<p>&nbsp</p>","http://192.168.1.204","","<p>aaa</p>
+","<p>aa</p>
+","<p>aa</p>
+","2022-10-05T04:15:44.000Z","5","Goa"
+"40","test","192.168.1.42","test","test@gmail.com","9874563210","","test","1664788510818.jpg","133","0","","","","","<p>&nbsp</p>","<p>&nbsp</p>","<p>&nbsp</p>","<p>&nbsp</p>","0","9874","<p>&nbsp</p>","<p>&nbsp</p>","","","<p>sdfsdf</p>
+","<p>dsfdsdf</p>
+","<p>sdfsf</p>
+","2022-10-03T08:49:30.000Z","6","Andhra Pradesh"
+"38","test","192.168.1.42","test","truelinesolution","9874563210","<p>rtgrfhf</p>
+","gfh","1664360440687.jpg","133","0","","","","","<p>&nbsp</p>","<p>&nbsp</p>","<p>&nbsp</p>","<p>&nbsp</p>","0","24321232","<p>&nbsp</p>","<p>&nbsp</p>","","","","","","2022-09-28T10:20:27.000Z","7","Andhra Pradesh"
+"37","test","192.168.1.42","test","test@gmail.com","9874563210","","test","1664194763055.jpg","155","0","","","","","<p>&nbsp</p>","<p>&nbsp</p>","<p>&nbsp</p>","<p>&nbsp</p>","0","9874","<p>&nbsp</p>","<p>&nbsp</p>","","","","","","2022-09-26T12:19:23.000Z","8","Tripura"
+"36","amadavad123","192.168.1.204:3000","animal","apexa@gmail.com","987654321","aa","www.jivan.com","1663929319461.jpg","132","0","","","","","<p>&nbsp</p>","<p>&nbsp</p>","<p>&nbsp</p>","<p>&nbsp</p>","0","123456897","<p>&nbsp</p>","<p>&nbsp</p>","http://192.168.1.204","","","","","2022-09-23T10:35:19.000Z","9","West Bengal"
+"33","Branch123","192.168.1.204:3000","Branch123 pvt ltd","branch@gmail.com","9876543210","branch","branch.com","1663394837474.jpg","140","0","","","","","<p>&nbsp</p>","<p>&nbsp</p>","<p>&nbsp</p>","<p>&nbsp</p>","0","","<p>&nbsp</p>","<p>&nbsp</p>","http://192.168.1.204","","","","","2022-09-17T06:07:17.000Z","10","Himachal Pradesh"
+"32","Suratcity","192.168.1.204:3000","suratcity123","SURATCITY@GMAIL.COM","987654321","surat","www.surat.com","1663324004324.jpg","128","0","","","","","<p>&nbsp</p>","<p>&nbsp</p>","<p>&nbsp</p>","<p>&nbsp</p>","0","","<p>&nbsp</p>","<p>&nbsp</p>","http://192.168.1.204","","<p>tyry</p>
+","<p>hfhfh</p>
+","<p>hgfh</p>
+","2022-09-16T10:26:44.000Z","11","Gujarat"
+"24","river","http://192.168.1.204:3000","Jivan Pvt Ltd","jivan@gmail.com","987654321","111, jivan","www.jivan.com","1662981067201.jpg","128","0","","","","","<p>&nbsp</p>","<p>&nbsp</p>","<p>&nbsp</p>","<p>&nbsp</p>","0","null","<p>&nbsp</p>","<p>&nbsp</p>","http://192.168.1.204","","<p>tryrt</p>
+","<p>r</p>
+","<p>tyr</p>
+","2022-09-12T11:11:07.000Z","12","Gujarat"
+"20","hariyana","192.168.1.41","tedf","truelinesolution","85757758845","test@gmail.com","www.haryana@gmail.com","1658812815192.jpg","128","0","","","","","<p>&nbsp</p>","<p>&nbsp</p>","<p>&nbsp</p>","<p>&nbsp</p>","0","","<p>&nbsp</p>","<p>&nbsp</p>","http::reviewlink","","<p>sdsddggg</p>
+","<p>ggg</p>
+","<p>dfdf</p>
+","2022-07-26T05:20:15.000Z","13","Gujarat"
+"19","mini1","192.168.1.204","bhagavati antala","truelinesolution.ind","9913299806","A-205, A-206, Shivalik Plaza,Beside Shivalik Heigh","yjyujhgyujh","1657967818806.jpg","150","0","null","null","null","null","<p>&nbsp;</p>
+<img src="https://www.truelinesolution.com/public/Asset/logo.png" alt="undefined" style="height: auto;width: auto"/>
+<p></p>
+","<p>&nbsp;</p>
+","<p>&nbsp;</p>
+<img src="https://www.truelinesolution.com/public/Asset/logo.png" alt="undefined" style="height: auto;width: auto"/>
+<p></p>
+","<p></p>
+<img src="https://www.truelinesolution.com/public/Asset/logo.png" alt="undefined" style="height: auto;width: auto"/>
+<p>&nbsp;</p>
+","0","null","<p></p>
+<img src="https://www.truelinesolution.com/public/Asset/logo.png" alt="undefined" style="height: auto;width: auto"/>
+<p>&nbsp;</p>
+","<p>&nbsp;</p>
+","","","<p>awsawew</p>
+","<p>swew</p>
+","<p>ewew</p>
+","2022-07-16T10:36:58.000Z","14","Punjab"
+"18","new test branch-123","192.168.1.204","Trueline Solution","abc@gmail.com","09876543210","910, Akshat Tower, Nr. Pakwan Restaurant, Opp. Raj","yjyujhgyujh","1657949826763.jpg","145","0","null","null","null","null","<p>&nbsp;</p>
+<img src="https://www.truelinesolution.com/public/Asset/logo.png" alt="undefined" style="height: auto;width: auto"/>
+<p></p>
+","<p>&nbsp;</p>
+<img src="https://www.truelinesolution.com/public/Asset/logo.png" alt="undefined" style="height: auto;width: auto"/>
+<p></p>
+","<p>&nbsp</p>","<p>&nbsp;</p>
+","0","null","<p>&nbsp;</p>
+","<p>&nbsp;</p>
+","","","<p>dfdfd</p>
+","<p>fgfgg</p>
+","<p>gggg</p>
+","2022-07-16T05:37:06.000Z","15","Manipur"
+"5","Rajasthan","192.168.1.204","dxfgbvdb","fcbcxvb","dfbncvbn","vzcxcbcvn","xdfhbdbn","1651224152109.jpg","151","0","smtp.gmail.com","465","jilsutariyapatel10179@gmail.com","cbmkokgsaqnnhhef","","","","","0","","<p>HDFC Bank</p><p>Account Name- Excellent Apostille Services</p><p>Account No. 037705002481</p><p>IFSC Code- ICIC0000377</p><p>Account type- Current</p><p>Branch- J P Road, Andheri (w)</p><p>City- Mumbai</p><p> </p>","<p></p><p>BOI Bank</p><p>Account Name- Excellent Apostille Services</p><p>Account No. 0845545211122</p><p>IFSC Code- SBI0000377</p><p>Account type- Current</p><p>Branch- J P Road, Andheri (w)</p><p>City- Mumbai</p>","","","<p>gfg</p>
+","<p>dfhh</p>
+","<p>hfhhf</p>
+","2022-05-10T04:24:26.000Z","16","Rajasthan"
+"4","Delhi","192.168.1.204","test-company_name","test-email","test-554643565","test-address","test-website","1651224077157.jpg","131","0","","","","","","","","","0","","","","","","<p>dsd</p>
+","<p>sads</p>
+","<p>asd</p>
+","2022-05-10T04:24:26.000Z","17","Delhi"
+"3","Bangalore","192.168.1.204","dsfhfdh","fdhs","gfjhgfj","dsfh","dsfh","1651220971046.jpg","130","0","smtp.gmail.com","465","jilsutariyapatel10179@gmail.com","cbmkokgsaqnnhhef","","","","","0","24hxtasfcf","","","","","<p>hfghfh</p>
+","<p>gdfd</p>
+","<p>fggdf</p>
+","2022-05-10T04:24:26.000Z","18","Karnataka"
+"2","Maharashtra","192.168.1.204","test-compnay_name2","test-email2","test-3333333332","atatata123,
+sz4fsx","test-website_url","1663924779445.jpg","129","0","smtp.gmail.com","465","jilsutariyapatel10179@gmail.com","ikpuzimobqspdstm","<p>My Header</p>
+","<p>My Footer</p>
+","<table border="0" cellpadding="0" cellspacing="0" style="margin: 0; padding: 0; font-family: Arial,'Helvetica Neue',Helvetica,sans-serif; font-size: 12px; color: #293b4a; line-height: 1.25; width: 500px; margin-top: 1em;" width="500">
+	<tbody>
+		<tr>
+			<td style="vertical-align: top; width: 1\\\\\\\\%;">
+			<div style="width: 90px; height: 90px; margin-right: 10px; border-radius: 5px;"><img height="90" src="https://share1.cloudhq-mkt3.net/acc9c893b264af8bafdfe1d455dd2b4adf400b1f.png?v=0.8723219229940358" width="90" /></div>
+			</td>
+			<td style="vertical-align: top;">
+			<table border="0" cellpadding="0" cellspacing="0" style="margin: 0; padding: 0; font-family: Arial,'Helvetica Neue',Helvetica,sans-serif; font-size: 12px; color: #293b4a; line-height: 1.25;">
+				<tbody>
+					<tr>
+						<td><span style="margin: 0; padding: 0; font-family: Arial,'Helvetica Neue',Helvetica,sans-serif; font-size: 14px; color: #195070; line-height: 1.25; font-weight: bolder;">Mr Nand Gopal</span></td>
+					</tr>
+					<tr>
+						<td>
+						<div style="margin-top: 2px; margin-bottom: 0;"><span style="margin: 0; padding: 0; font-family: Arial,'Helvetica Neue',Helvetica,sans-serif; font-size: 12px; color: #293b4a; line-height: 1.25;">Manager</span> , <span style="margin: 0; padding: 0; font-family: Arial,'Helvetica Neue',Helvetica,sans-serif; font-size: 12px; color: #293b4a; line-height: 1.25;">EASSPL</span></div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+						<div style="margin-top: 4px; margin-bottom: 6px; border-top: 3px solid #195070; height: 3px;">&nbsp;</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+						<div style="margin-top: 3px; margin-bottom: 0; line-height: 1.2;">Mo: 9979777748&nbsp; |&nbsp; &nbsp; <a href="mailto:gopal@apostille.in" rel="noopener" style="margin: 0; padding: 0; font-family: Arial,'Helvetica Neue',Helvetica,sans-serif; font-size: 12px; color: #111111; line-height: 1.25; text-decoration: none;" target="_blank">gopal@apostille.in</a></div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+						<div style="margin-top: 8px; line-height: 1.2;">
+						<div style="margin-top: 3px;"><span style="margin: 0; padding: 0; font-family: Arial,'Helvetica Neue',Helvetica,sans-serif; font-size: 12px; color: #2a7aa9; line-height: 1.25; font-weight: 600;">Address:&nbsp;</span> <span style="margin: 0; padding: 0; font-family: Arial,'Helvetica Neue',Helvetica,sans-serif; font-size: 12px; color: #293b4a; line-height: 1.25;">&quot; Excellent Apostille Services &quot;&nbsp;<br />
+						6th Floor - Business Square, Near Bata Showroom,&nbsp;<br />
+						Opp. Andheri Railway Station, Andheri (w), &nbsp;<br />
+						Mumbai - 400058, Maharashtra ( India )&nbsp;<br />
+						Ph. 022 40140777&nbsp; </span></div>
+
+						<div style="margin-top: 3px;"><span style="margin: 0; padding: 0; font-family: Arial,'Helvetica Neue',Helvetica,sans-serif; font-size: 12px; color: #2a7aa9; line-height: 1.25; font-weight: 600;">Website:&nbsp;</span> <span style="margin: 0; padding: 0; font-family: Arial,'Helvetica Neue',Helvetica,sans-serif; font-size: 12px; color: #293b4a; line-height: 1.25;"> <a href="http://www.mea-india.in" rel="noopener" style="margin: 0; padding: 0; font-family: Arial,'Helvetica Neue',Helvetica,sans-serif; font-size: 12px; color: #111111; line-height: 1.25; text-decoration: none;" target="_blank">www.mea-india.in</a>&nbsp; </span></div>
+
+						<div style="margin-top: 3px;"><span style="margin: 0; padding: 0; font-family: Arial,'Helvetica Neue',Helvetica,sans-serif; font-size: 12px; color: #2a7aa9; line-height: 1.25; font-weight: 600;">Branch:&nbsp;</span> <span style="margin: 0; padding: 0; font-family: Arial,'Helvetica Neue',Helvetica,sans-serif; font-size: 12px; color: #293b4a; line-height: 1.25;">Ahmedabad | Bangalore | Chennai | Delhi | Pune<br />
+						Hyderabad | Goa&nbsp;| Kolkata | Bhopal | Surat | Vadodara | Patna&nbsp; </span></div>
+						</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+						<div style="margin-top: 8px; margin-bottom: 0;"><a href="https://www.facebook.com/apostilleindia" rel="noopener" style="width: 20px; height: 20px; text-decoration: none; border-radius: 0; border: 0;" target="_blank" title="Facebook"><img height="20" src="https://www.cloudhq.net/images/social_icons/32px/facebook.png" style="width: 20px; height: 20px; text-decoration: none; border-radius: 0; border: 0;" width="20" /> </a>&nbsp; <a href="https://www.linkedin.com/company/apostille-india" rel="noopener" style="width: 20px; height: 20px; text-decoration: none; border-radius: 0; border: 0;" target="_blank" title="LinkedIn"> <img height="20" src="https://www.cloudhq.net/images/social_icons/32px/linkedin.png" style="width: 20px; height: 20px; text-decoration: none; border-radius: 0; border: 0;" width="20" /> </a>&nbsp; <a href="https://twitter.com/apostilleindia" rel="noopener" style="width: 20px; height: 20px; text-decoration: none; border-radius: 0; border: 0;" target="_blank" title="Twitter"> <img height="20" src="https://www.cloudhq.net/images/social_icons/32px/twitter.png" style="width: 20px; height: 20px; text-decoration: none; border-radius: 0; border: 0;" width="20" /> </a>&nbsp; <a href="https://www.instagram.com/excellentapostille/" rel="noopener" style="width: 20px; height: 20px; text-decoration: none; border-radius: 0; border: 0;" target="_blank" title="Instagram"> <img height="20" src="https://www.cloudhq.net/images/social_icons/32px/instagram.png" style="width: 20px; height: 20px; text-decoration: none; border-radius: 0; border: 0;" width="20" /> </a>&nbsp;<br />
+						&nbsp;</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+	</tbody>
+</table>
+","<p>Terms &amp; Condition</p>
+","0","frgrt","<p>HDFC Bank</p><p>Account Name- Excellent Apostille Services</p><p>Account No. 037705002481</p><p>IFSC Code- ICIC0000377</p><p>Account type- Current</p><p>Branch- J P Road, Andheri (w)</p><p>City- Mumbai</p><p> </p>","<p></p><p>BOI Bank</p><p>Account Name- Excellent Apostille Services</p><p>Account No. 0845545211122</p><p>IFSC Code- SBI0000377</p><p>Account type- Current</p><p>Branch- J P Road, Andheri (w)</p><p>City- Mumbai</p>","","gfhfghg","<p>dsfdf</p>
+","<p>fdsf</p>
+","<p>fdsf</p>
+","2022-05-10T04:24:26.000Z","19","Maharastra"
+"1","Surat","192.168.1.204asddassd","test-company-name-edit","test-email","test-mobile-number","<p>fgtgr</p>
+","test-website","1663059622490.jpg","128","0","smtp.gmail.com","465","jilsutariyapatel10179@gmail.com","ikpuzimobqspdstm","<p>Header</p>
+
+<p><img alt="undefined" src="https://picsum.photos/200/300" style="height: auto;width: auto" /></p>
+
+<p>sfsf</p>
+","<p>Footer</p>
+
+<p><img alt="undefined" src="https://picsum.photos/200/300" style="height: auto;width: auto" /></p>
+
+<p>ffds</p>
+","<p>&Agrave;Signature</p>
+
+<p>fgrgrh4343</p>
+
+<p>test123</p>
+
+<blockquote>
+<p><strong>sdfdsf<em>dsfsdf<s>dsfsdfsdf</s></em></strong>fsdfsdfdsfsdffsdfsdfsdfsdf</p>
+
+<p>k&Icirc;</p>
+</blockquote>
+
+<p>&nbsp;</p>
+
+<p>&Agrave;Signature</p>
+
+<p>fgrgrh4343</p>
+
+<p>test123</p>
+
+<blockquote>
+<p><strong>sdfdsf<em>dsfsdf<s>dsfsdfsdf</s></em></strong>fsdfsdfdsfsdffsdfsdf​​​​​​​sdfsdf</p>
+
+<h1>k&Icirc;</h1>
+
+<h2>sdsdsdsfdefsdfsdf</h2>
+</blockquote>
+","<p>Terms &amp; condition test My TC</p>
+
+<p>&nbsp;</p>
+","46546","GST 1235","<p>test676767 test GST</p>
+","<p>non setting</p>
+","35rfe3545t4","fgfgf","<p>fgdg</p>
+","<p>fhdfhff</p>
+","<p>fhhfh</p>
+","2022-05-10T04:24:26.000Z","20","Gujarat"
