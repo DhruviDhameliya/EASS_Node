@@ -2,14 +2,14 @@ var converter = require("number-to-words");
 const paths = require("path");
 
 module.exports = ({ commission_data, data }) => {
-    const getRows = () => {
-        let rows = "";
-        {
-            commission_data
-                ? commission_data.map((commission, index) => {
-                    rows =
-                        rows +
-                        `
+  const getRows = () => {
+    let rows = "";
+    {
+      commission_data
+        ? commission_data.map((commission, index) => {
+          rows =
+            rows +
+            `
         <tbody>
         <tr class="border heading-row">
                   <td class="right" align="center" style="padding: 15px">
@@ -29,14 +29,14 @@ module.exports = ({ commission_data, data }) => {
                   </td>
                 </tr> 
                 </tbody>`;
-                })
-                : "";
-        }
+        })
+        : "";
+    }
 
-        return rows;
-    };
+    return rows;
+  };
 
-    return `
+  return `
   <html>
   <head>
     <style>
@@ -186,7 +186,7 @@ module.exports = ({ commission_data, data }) => {
         <tr class="border">
                 <td colspan="6" align="center">
                 <h4 style="margin: 10px 0"><b>Commission Details of ${data.name
-        }</b></h4>
+    }</b></h4>
                 </td>
             </tr>
             <tr class="border">

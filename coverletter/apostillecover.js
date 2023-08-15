@@ -84,8 +84,8 @@ module.exports = (
               <b>
                 <h4 style="margin:0px;">${country.country_name}</h4>
               </b>
-            </td>
-          </tr>`;
+                </td>
+            </tr>`;
           {
             country.apostille_user &&
               country.apostille_user.map((user) => {
@@ -93,7 +93,7 @@ module.exports = (
                 rows =
                   rows +
                   `<tr>
-                  <td style="padding:10px;">
+                <td style="padding:10px;">
                     <div
                       class="block "
                       style="margin-bottom: 5px !important;"
@@ -101,7 +101,7 @@ module.exports = (
                       <b>
                         <label>Name :</label>${user.a_prefix} ${user.a_name}
                         </b>
-                        </div>
+                            </div>
                         <div
                           class="block"
                           style="margin-bottom: 5px !important;"
@@ -110,7 +110,7 @@ module.exports = (
                             <label>Process :</label>
                           </b>
                                ${user.apostille_type}
-                               </div>
+                            </div>
                                <div
                                  class="block"
                                  style="margin-bottom: 5px !important;"
@@ -118,9 +118,9 @@ module.exports = (
                                  <b>
                                    <label>Certificates:</label>
                                  </b>
-                                 <br />
+                              <br />
                               ${getcertificate(user.a_certificate_name, "0")}
-                              </div>
+                </div>
                               <div
                                 class="block"
                                 style="margin-bottom: 5px !important;"
@@ -128,11 +128,11 @@ module.exports = (
                                 <b>
                                   <label>Supporting Document:</label>
                                 </b>
-                                <br />
+                              <br />
                               ${getsupporting(user.supporting_doc_name)}
-                              </div>
-                              </td>
-                              <td class="" align="center">
+                 </div>
+                          </td>
+                          <td class="" align="center">
                           ${getcertificate(user.a_certificate_name, "1")}
                           </td>
                           <td class="" align="center">
@@ -162,8 +162,8 @@ module.exports = (
             <b>
               <h4 style="margin:0px;">${country.country_name}</h4>
             </b>
-          </td>
-        </tr>`;
+                </td>
+            </tr>`;
           {
             country.apostille_users &&
               country.apostille_users.map((user) => {
@@ -171,7 +171,7 @@ module.exports = (
                 rows =
                   rows +
                   `<tr>
-                  <td style="padding:10px;">
+                <td style="padding:10px;">
                   <div
                     class="block "
                     style="margin-bottom: 5px !important;"
@@ -180,8 +180,8 @@ module.exports = (
                       <label>Name :</label>
                                  ${user.a_prefix} ${user.a_name}
                                  </b>
-                                 </div>
-                                
+                            </div>
+                            
                                  <div
                                    class="block"
                                    style="margin-bottom: 5px !important;"
@@ -189,9 +189,9 @@ module.exports = (
                                    <b>
                                      <label>Certificates:</label>
                                    </b>
-                                   <br />
+                              <br />
                               ${getcertificates(user.a_certificate_name, "0")}
-                              </div>
+                </div>
                               <div
                                 class="block"
                                 style="margin-bottom: 5px !important;"
@@ -200,8 +200,8 @@ module.exports = (
                                   <label>Reason :</label>
                                 </b>
                                 <br />${user.reason}
-                                </div>
-                              </td>
+                 </div>
+                          </td>
                           <td class="" align="center">
                           ${getcertificates(user.a_certificate_name, "1")}
                           </td>
@@ -224,54 +224,54 @@ module.exports = (
      <html>
      <head>
         <style>
-          @import url('../../fonts/Poppins-ExtraLight.ttf');
-          *{
-            font-size: 14px;
-            font-family: "Poppins", sans-serif;
-          }
-              html {
-                zoom: 0.60;
-              }
-             .card{
-                background: #fff;
-                margin:50px;
-              }
+        @import url('../../fonts/Poppins-ExtraLight.ttf');
+        *{
+          font-size: 14px;
+          font-family: "Poppins", sans-serif;
+        }
+            html {
+              zoom: 0.60;
+            }
+           .card{
+              background: #fff;
+              margin:50px;
+            }
               h3, .h3 {
                 font-size: 1.75rem;
             }
             h5, .h5 {
               font-size: 1.25rem;
           }
-              table.desc-table {
-                width: 100%;
-              }
-              th,td{
+            table.desc-table {
+              width: 100%;
+            }
+            th,td{
                 padding: 4px;
-              }
-              table.desc-table tbody {
-                vertical-align: top !important;
-              }
-              tr.billtorow {
-                background: #8080803b;
-              }
-              tr.heading-row {
+            }
+            table.desc-table tbody {
+              vertical-align: top !important;
+            }
+            tr.billtorow {
+              background: #8080803b;
+            }
+            tr.heading-row {
                 background: #f0f0f0;
               }
               tr.blue-row {
                 background: #99d2f2;
-              }
-              .footer{
-                padding-top:10px ;  
-                width: 70%;
-                display: inline-block;
-              }
-              .footer p{
-                font-weight: 600;
-              }
-              .flex{
+            }
+            .footer{
+              padding-top:10px ;  
+              width: 70%;
+              display: inline-block;
+            }
+            .footer p{
+              font-weight: 600;
+            }
+            .flex{
                 display: -webkit-box;
                 display: -ms-flexbox;
-                display: flex;
+              display: flex;
                     -webkit-box-orient: horizontal;
                     -webkit-box-direction: normal;
                         -ms-flex-direction: row;
@@ -293,55 +293,55 @@ module.exports = (
               .mx-2{
                 margin-right: 0.5rem !important;
                 margin-left: 0.5rem !important;
-              }
-              .tbl{
-                width:  100%;
-              }
-              .bold{
+            }
+            .tbl{
+              width:  100%;
+            }
+            .bold{
                 font-weight: bolder;
-              }
-              .sig{
+            }
+            .sig{
                 height: 70px;
-              }
-              .details_table{
-                width:  100%;
-              }
-              .desc-table b{
-                  margin-left: 70px;
-              }
-              .block_supply{
-                top: 150px;
-                position: absolute;
-              }
-              .block_supply2{
-                top: 170px;
-                position: absolute;
-              }
-              .total_class{
-                display: flex;
-                padding: 0 10px;
-                justify-content: space-between;
-              }
-              .tdmargin{
-                padding-left: 4px;
-              }
-              .tdmarginalign{
-                padding-right: 4px;
-                text-align: end;
-              }
-              .signarureclass{
-                text-align: center;
-                margin-bottom: 0;
-                font-weight: bold;
-              }   
-              .label {
-                display: inline-block;
-                width: 110px;
-              }
-              .float_right
-              {
-                float:right;
-              }
+            }
+            .details_table{
+              width:  100%;
+            }
+            .desc-table b{
+                margin-left: 70px;
+            }
+            .block_supply{
+              top: 150px;
+              position: absolute;
+            }
+            .block_supply2{
+              top: 170px;
+              position: absolute;
+            }
+            .total_class{
+              display: flex;
+              padding: 0 10px;
+              justify-content: space-between;
+            }
+            .tdmargin{
+              padding-left: 4px;
+            }
+            .tdmarginalign{
+              padding-right: 4px;
+              text-align: end;
+            }
+            .signarureclass{
+              text-align: center;
+              margin-bottom: 0;
+              font-weight: bold;
+            }   
+            .label {
+              display: inline-block;
+              width: 110px;
+            }
+            .float_right
+            {
+              float:right;
+            }
               .fsize{
                 font-size:11px !important;
               }
@@ -354,8 +354,8 @@ module.exports = (
                 margin-top: 0;
                 font-weight: bold;
               }
-          </style>
-       </head>
+        </style>
+     </head>
      </html>
      <div class="card">
      <div style=" padding: 5px 10px; font-size: 10px">${moment().format(
@@ -388,32 +388,32 @@ module.exports = (
                   </div>
                 </div>
                 <div style="word-break: break-word;" class="fsize">
-                ${settingdata.address != null ? settingdata.address : ""}
+              ${settingdata.address != null ? settingdata.address : ""}
                 </div>
-                ${
-                  user_data.mobile != null
-                    ? `<div class="fsize">
+              ${
+                user_data.mobile != null
+                  ? `<div class="fsize">
                       <label class="fsize">Contact No : </label>
                       ${user_data.mobile}
                     </div>`
-                    : ``
-                }
+                  : ``
+              }
               </div>
           </div>
-        </td>
-      </tr>
-      <tr class="">
-          <td colspan="8" align="center">
-            <h5 style="margin-bottom : 0px;">
-              <b>Apostille Cover Letter</b>
-            </h5>
-          </td>
-        </tr>
+      </td>
+    </tr>
+            <tr class="">
+                <td colspan="8" align="center">
+                <h5 style="margin-bottom : 0px;">
+                <b>Apostille Cover Letter</b>
+                </h5>
+                </td>
+            </tr>
       ${
         country && country.length > 0
           ? `
           
-        <tr style="padding: 0px;">
+            <tr style="padding: 0px;">
         <td colspan="2" style="padding: 0px;">
           <table
             border="1"
@@ -422,7 +422,7 @@ module.exports = (
             style="width:100%;border-collapse: collapse;"
           >
             <tr class="heading-row">
-              <th class=""> Content</th>
+                            <th class=""> Content</th>
               <th class="" width="6%" align="center">
                 No of Docs
               </th>
@@ -432,35 +432,35 @@ module.exports = (
               <th class="" width="6%" align="center">
                 Verified By You
               </th>
-            </tr>
+                        </tr>
                         ${getrow()}
                         <tr>
-                        <td class="" align="right">
-                          <div class="block  m-2">Total Document</div>
-                        </td>
-        
-                        <td class="" align="center">
-                          ${total}
-                        </td>
+                            <td class="" align="right">
+                                <div class="block  m-2">Total Document</div>
+                            </td>
+
+                            <td class="" align="center">
+                                 ${total}
+                            </td>
                         <td align="center"></td>
                         <td align="center"></td>
-                      </tr>
-                    </table>
-                  </td>
+                       </tr>
+                </table>
+            </td>
                 </tr> `
           : ""
       }
       ${
         ulist && ulist.length > 0
           ? `
-          <tr class="">
-          <td colspan="8" align="center">
-            <h5 style="margin-bottom : 0px;">
-              <b>Under Correction</b>
-            </h5>
-          </td>
-        </tr>
-        <tr style="padding: 0px;">
+        <tr class="">
+        <td colspan="8" align="center">
+        <h5 style="margin-bottom : 0px;">
+        <b>Under Correction</b>
+        </h5>
+        </td>
+    </tr>
+    <tr style="padding: 0px;">
         <td colspan="2" style="padding: 0px;">
           <table
             border="1"
@@ -469,7 +469,7 @@ module.exports = (
             style="width:100%;border-collapse: collapse;"
           >
             <tr class="heading-row">
-              <th class=""> Content</th>
+                    <th class=""> Content</th>
               <th class="" width="6%" align="center">
                 No of Docs
               </th>
@@ -479,22 +479,22 @@ module.exports = (
               <th class="" width="6%" align="center">
                 Verified By You
               </th>
-            </tr>
+                </tr>
                 ${getrows()}
                 <tr>
-                <td class="" align="right">
-                  <div class="block  m-2">Total Document</div>
-                </td>
+                    <td class="" align="right">
+                        <div class="block  m-2">Total Document</div>
+                    </td>
 
-                <td class="" align="center">
-                  ${totals}
-                </td>
+                    <td class="" align="center">
+                         ${totals}
+                    </td>
                 <td align="center"></td>
                 <td align="center"></td>
-              </tr>
-            </table>
-          </td>
-        </tr>
+               </tr>
+          </table>
+        </td>
+    </tr>
       `
           : ""
       }`;

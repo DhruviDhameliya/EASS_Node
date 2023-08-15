@@ -10,7 +10,6 @@ module.exports = (
   imageAsBase64,
   signatureAsBase64
 ) => {
-  console.log(convertdata, "dfdjhfjdh");
   const convertamt = (amount) => {
     if (convertdata.amount != undefined) {
       const amt = isNaN(amount / convertdata.amount)
@@ -38,7 +37,8 @@ module.exports = (
           <td class="tdmargin">${index + 1}</td>
           <td class="tdmargin">
             <b>
-            ${adata.a_prefix} ${adata.a_name} (${adata.country_name != null ? adata.country_name : ""
+            ${adata.a_prefix} ${adata.a_name} (${
+              adata.country_name != null ? adata.country_name : ""
             })
             </b>
             <br/>
@@ -46,12 +46,14 @@ module.exports = (
           </td>
           <td class="tdmargin">${adata.attestation_type}</td>
           <td class="tdmargin">${settingdata.hsn_code}</td>
-          <td class="tdmarginalign">${adata.a_certificate.split(",").length
-            }</td>
+          <td class="tdmarginalign">${
+            adata.a_certificate.split(",").length
+          }</td>
           <td class="tdmarginalign">${convertamt(adata.amount)}</td>
         
-          <td class="tdmarginalign">${convertamt(adata.amount) * adata.a_certificate.split(",").length
-            }</td>
+          <td class="tdmarginalign">${
+            convertamt(adata.amount) * adata.a_certificate.split(",").length
+          }</td>
         </tr>`;
         });
     } else if (customerdata.c_s_type == 8) {
@@ -73,8 +75,9 @@ module.exports = (
                <br/>
                <div>${cerficates}</div>
                </td>
-               <td class="tdmargin">${vdata.v_country != null ? vdata.v_country : ""
-            } / ${vdata.visa_type}</td>
+               <td class="tdmargin">${
+                 vdata.v_country != null ? vdata.v_country : ""
+               } / ${vdata.visa_type}</td>
                <td class="tdmargin">${settingdata.hsn_code}</td>
                <td class="tdmarginalign">1</td>
                <td class="tdmarginalign">${convertamt(vdata.amount)}</td>
@@ -94,17 +97,20 @@ module.exports = (
             rows +
             `<tr class="heading-row">
           <td class="tdmargin">${index + 1}</td>
-          <td class="tdmargin"><b>${adata.a_prefix} ${adata.a_name} (${adata.country_name != null ? adata.country_name : ""
+          <td class="tdmargin"><b>${adata.a_prefix} ${adata.a_name} (${
+              adata.country_name != null ? adata.country_name : ""
             })</b><br/>
             ${cerficates}</td>
           <td class="tdmargin">${adata.apostille_type}</td>
           <td class="tdmargin">${settingdata.hsn_code}</td>
-          <td class="tdmarginalign">${adata.a_certificate.split(",").length
-            }</td>
+          <td class="tdmarginalign">${
+            adata.a_certificate.split(",").length
+          }</td>
           <td class="tdmarginalign">${convertamt(adata.amount)}</td>
          
-          <td class="tdmarginalign">${convertamt(adata.amount) * adata.a_certificate.split(",").length
-            }</td>
+          <td class="tdmarginalign">${
+            convertamt(adata.amount) * adata.a_certificate.split(",").length
+          }</td>
         </tr>`;
         });
     } else if (customerdata.c_s_type == 20) {
@@ -119,16 +125,19 @@ module.exports = (
             rows +
             `<tr class="heading-row">
           <td class="tdmargin">${index + 1}</td>
-          <td class="tdmargin"><b>${adata.a_prefix} ${adata.a_name} (${adata.country_name != null ? adata.country_name : ""
+          <td class="tdmargin"><b>${adata.a_prefix} ${adata.a_name} (${
+              adata.country_name != null ? adata.country_name : ""
             })</b><br/>${cerficates}</td>
           <td class="tdmargin">${adata.apostille_type}</td>
           <td class="tdmargin">${settingdata.hsn_code}</td>
-          <td class="tdmarginalign">${adata.a_certificate.split(",").length
-            }</td>
+          <td class="tdmarginalign">${
+            adata.a_certificate.split(",").length
+          }</td>
           <td class="tdmarginalign">${convertamt(adata.amount)}</td>
          
-          <td class="tdmarginalign">${convertamt(adata.amount) * adata.a_certificate.split(",").length
-            }</td>
+          <td class="tdmarginalign">${
+            convertamt(adata.amount) * adata.a_certificate.split(",").length
+          }</td>
         </tr>`;
         });
     }
@@ -297,38 +306,44 @@ module.exports = (
               <div style="word-break: break-word;" class="fsize">
                   ${settingdata.address != null ? settingdata.address : ""}
               </div>
-              ${customerdata.c_tax && customerdata.c_tax == 1
-      ? `<div class="fsize">
+              ${
+                customerdata.c_tax && customerdata.c_tax == 1
+                  ? `<div class="fsize">
                     <label class="fsize">GST No : </label>
                     ${settingdata.c_gstno}
                   </div>`
-      : ``
-    }
-              ${customerdata.c_tax && customerdata.c_tax == 1
-      ? `<div class="fsize">
-                  <label class="fsize">State Name : </label> ${settingdata.state_name ? settingdata.state_name : " "
-      }, 
-                  <label class="fsize">Code : </label> ${settingdata.TIN_number ? settingdata.TIN_number : ""
-      }
+                  : ``
+              }
+              ${
+                customerdata.c_tax && customerdata.c_tax == 1
+                  ? `<div class="fsize">
+                  <label class="fsize">State Name : </label> ${
+                    settingdata.state_name ? settingdata.state_name : " "
+                  }, 
+                  <label class="fsize">Code : </label> ${
+                    settingdata.TIN_number ? settingdata.TIN_number : ""
+                  }
                   </div>`
-      : ``
-    }
-              ${userdata.mobile != null
-      ? `<div class="fsize">
+                  : ``
+              }
+              ${
+                userdata.mobile != null
+                  ? `<div class="fsize">
                     <label class="fsize">Contact No : </label>
                     ${userdata.mobile}
                   </div>`
-      : ``
-    }
-              ${userdata.u_email != null
-      ? `<div class="fsize">
+                  : ``
+              }
+              ${
+                userdata.u_email != null
+                  ? `<div class="fsize">
                     <label class="fsize">Email : </label>
                     ${userdata.u_email} 
                     <label class="fsize">Website : </label>
                     <a href='${settingdata.website_url}'>${settingdata.website_url}</a>
                   </div>`
-      : ``
-    }
+                  : ``
+              }
             </div>
         </div>
       </td>
@@ -362,16 +377,16 @@ module.exports = (
         <div class="block">
           <label><b>Apply For : </b></lable> 
           ${(() => {
-      if (customerdata.c_s_type == 10) {
-        return `Attestation`;
-      } else if (customerdata.c_s_type == 8) {
-        return `Visa`;
-      } else if (customerdata.c_s_type == 20) {
-        return `Translation`;
-      } else {
-        return `Apostille`;
-      }
-    })()}
+            if (customerdata.c_s_type == 10) {
+              return `Attestation`;
+            } else if (customerdata.c_s_type == 8) {
+              return `Visa`;
+            } else if (customerdata.c_s_type == 20) {
+              return `Translation`;
+            } else {
+              return `Apostille`;
+            }
+          })()}
         </div>
       </td>
     </tr>
@@ -381,38 +396,45 @@ module.exports = (
         <div style= "marginBottom: 3px">
           <b>Bill To</b>
         </div>
-        ${customerdata.c_gst == 0
-      ? `${customerdata.f_z_type == 1
-        ? `<lable>Free Zone :</lable>`
-        : `<lable>ARN No :</lable>`
-      } ${customerdata.f_z_type == 1
-        ? "Special Economic Zone"
-        : customerdata.arn_no
-      }`
-      : ""
-    }
+        ${
+          customerdata.c_gst == 0
+            ? `${
+                customerdata.f_z_type == 1
+                  ? `<lable>Free Zone :</lable>`
+                  : `<lable>ARN No :</lable>`
+              } ${
+                customerdata.f_z_type == 1
+                  ? "Special Economic Zone"
+                  : customerdata.arn_no
+              }`
+            : ""
+        }
         <div class="block">
           <label>Name :</lable> ${customerdata.c_prefix} ${customerdata.c_name}
         </div>
-        ${customerdata.c_tax == 1 && customerdata.f_z_type != 2
-      ? `<div class="block">
+        ${
+          customerdata.c_tax == 1 && customerdata.f_z_type != 2
+            ? `<div class="block">
             <label>GST No : </label>${customerdata.c_gst_no}
           </div>`
-      : `<div class="block">
+            : `<div class="block">
             <label>Mobile No : </label>${customerdata.c_mo_no}
           </div>`
-    }
-        ${customerdata.c_tax == 1 && customerdata.f_z_type != 2
-      ? `<div class="block">
-            <label>State Name : </label>${customerdata.state ? customerdata.state : " "
-      }, 
-            <label>Code : </label>${customerdata.TIN_number ? customerdata.TIN_number : ""
-      }
+        }
+        ${
+          customerdata.c_tax == 1 && customerdata.f_z_type != 2
+            ? `<div class="block">
+            <label>State Name : </label>${
+              customerdata.state ? customerdata.state : " "
+            }, 
+            <label>Code : </label>${
+              customerdata.TIN_number ? customerdata.TIN_number : ""
+            }
           </div>`
-      : `<div class="block">
+            : `<div class="block">
             <label>Email : </label>${customerdata.c_email}
           </div>`
-    }
+        }
         <div class="block">
             <label>Address :</lable> ${customerdata.c_address}</div>
       </td>
@@ -444,16 +466,16 @@ module.exports = (
         <strong>Name & Documents</strong>
       </th>
       ${(() => {
-      if (customerdata.c_s_type == 10) {
-        return `<th><strong>Type Of Attestation</strong></th>`;
-      } else if (customerdata.c_s_type == 8) {
-        return `<th><strong>Country / Visa Type</strong></th>`;
-      } else if (customerdata.c_s_type == 20) {
-        return `<th><strong>Type Of Translation</strong></th>`;
-      } else {
-        return `<th><strong>Type Of Apostille</strong></th>`;
-      }
-    })()}
+        if (customerdata.c_s_type == 10) {
+          return `<th><strong>Type Of Attestation</strong></th>`;
+        } else if (customerdata.c_s_type == 8) {
+          return `<th><strong>Country / Visa Type</strong></th>`;
+        } else if (customerdata.c_s_type == 20) {
+          return `<th><strong>Type Of Translation</strong></th>`;
+        } else {
+          return `<th><strong>Type Of Apostille</strong></th>`;
+        }
+      })()}
       <th>
         <strong>HSN/SAC</strong>
       </th>
@@ -473,19 +495,20 @@ module.exports = (
         <div>
           <b style= "text-transform: capitalize">
             Total In Words : ${converter.toWords(
-      convertamt(paymentres.net_amt)
-    )}
+              convertamt(paymentres.net_amt)
+            )}
           </b>
           <br />
           <br />${(() => {
-      if (customerdata.c_tax == 1) {
-        return `<b>Bank Details :</b>
-              ${settingdata.bank_details != null ? settingdata.bank_details : ""
-          }`;
-      } else {
-        return "";
-      }
-    })()}
+            if (customerdata.c_tax == 1) {
+              return `<b>Bank Details :</b>
+              ${
+                settingdata.bank_details != null ? settingdata.bank_details : ""
+              }`;
+            } else {
+              return "";
+            }
+          })()}
         </div>
       </td>
       <td colspan="4"  style="vertical-align: top;">
@@ -497,42 +520,46 @@ module.exports = (
             ${convertamt(paymentres.total_amount)}
           </span>
         </div>
-        ${paymentres.exp_charge != 0
-      ? `<div class="block total_class">
+        ${
+          paymentres.exp_charge != 0
+            ? `<div class="block total_class">
               <label ><b>Extra Charges</b></label>
               <span class="float_right" style="wordBreak:keep-all;">${convertamt(
-        paymentres.exp_charge
-      )}</span>
+                paymentres.exp_charge
+              )}</span>
             </div>`
-      : ""
-    }
-          ${paymentres.courier != 0
-      ? `<div class="block total_class">
+            : ""
+        }
+          ${
+            paymentres.courier != 0
+              ? `<div class="block total_class">
                 <label ><b>Courier Charge</b></label>
                 <span class="float_right" style="wordBreak:keep-all;">${convertamt(
-        paymentres.courier
-      )}</span>
+                  paymentres.courier
+                )}</span>
               </div>`
-      : ""
-    }
-          ${paymentres.dis_amt != 0
-      ? `<div class="block total_class">
+              : ""
+          }
+          ${
+            paymentres.dis_amt != 0
+              ? `<div class="block total_class">
                 <label ><b>Discount(-)</b></label>
                 <span class="float_right" style="wordBreak:keep-all;">${convertamt(
-        paymentres.dis_amt
-      )}</span>
+                  paymentres.dis_amt
+                )}</span>
               </div>`
-      : ""
-    }
-          ${paymentres.coupon_amt != 0
-      ? `<div class="block total_class">
+              : ""
+          }
+          ${
+            paymentres.coupon_amt != 0
+              ? `<div class="block total_class">
                 <label ><b>Coupon Discount(-)</b></label>
                 <span class="float_right" style="wordBreak:keep-all;">${convertamt(
-        paymentres.coupon_amt
-      )}</span>
+                  paymentres.coupon_amt
+                )}</span>
               </div>`
-      : ""
-    }
+              : ""
+          }
 
           <div class="block total_class">
             <label>
@@ -540,124 +567,131 @@ module.exports = (
             </label>
             <span class="float_right" style="wordBreak:keep-all;">
               ${convertamt(
-      parseFloat(paymentres.total_amount) +
-      parseFloat(paymentres.courier) +
-      parseFloat(paymentres.exp_charge) -
-      parseFloat(paymentres.dis_amt) -
-      parseFloat(paymentres.coupon_amt)
-    )}
+                parseFloat(paymentres.total_amount) +
+                  parseFloat(paymentres.courier) +
+                  parseFloat(paymentres.exp_charge) -
+                  parseFloat(paymentres.dis_amt) -
+                  parseFloat(paymentres.coupon_amt)
+              )}
             </span>
           </div>
           
-          ${customerdata.c_tax == 1
-      ? `
-                ${b_state_id == paymentres.c_state
-        ? `<div class="block total_class">
+          ${
+            customerdata.c_tax == 1
+              ? `
+                ${
+                  b_state_id == paymentres.c_state
+                    ? `<div class="block total_class">
                     <label >
                     <b>CGST(${generalsetting.c_gst_pre})%(+)</b>
                     </label>
                     <span class="float_right" style="wordBreak:keep-all;">${+Number(
-          convertamt(
-            ((parseFloat(paymentres.total_amount) +
-              parseFloat(paymentres.courier) +
-              parseFloat(paymentres.exp_charge) -
-              parseFloat(paymentres.dis_amt) -
-              parseFloat(paymentres.coupon_amt)) *
-              parseInt(generalsetting.c_gst_pre)) /
-            100
-          )
-        ).toFixed(2)}</span>
+                      convertamt(
+                        ((parseFloat(paymentres.total_amount) +
+                          parseFloat(paymentres.courier) +
+                          parseFloat(paymentres.exp_charge) -
+                          parseFloat(paymentres.dis_amt) -
+                          parseFloat(paymentres.coupon_amt)) *
+                          parseInt(generalsetting.c_gst_pre)) /
+                          100
+                      )
+                    ).toFixed(2)}</span>
                   </div>
                   <div class="block total_class">
                     <label >
                     <b>SGST(${generalsetting.s_gst_pre})%(+)</b>
                     </label>
                     <span class="float_right" style="wordBreak:keep-all;">${+Number(
-          convertamt(
-            ((parseFloat(paymentres.total_amount) +
-              parseFloat(paymentres.courier) +
-              parseFloat(paymentres.exp_charge) -
-              parseFloat(paymentres.dis_amt) -
-              parseFloat(paymentres.coupon_amt)) *
-              parseInt(generalsetting.s_gst_pre)) /
-            100
-          )
-        ).toFixed(2)}</span>
+                      convertamt(
+                        ((parseFloat(paymentres.total_amount) +
+                          parseFloat(paymentres.courier) +
+                          parseFloat(paymentres.exp_charge) -
+                          parseFloat(paymentres.dis_amt) -
+                          parseFloat(paymentres.coupon_amt)) *
+                          parseInt(generalsetting.s_gst_pre)) /
+                          100
+                      )
+                    ).toFixed(2)}</span>
                   </div>`
-        : `<div class="block total_class">
+                    : `<div class="block total_class">
                     <label >
-                    <b>IGST(${parseInt(generalsetting.c_gst_pre) +
-        parseInt(generalsetting.s_gst_pre)
-        })%(+)</b>
+                    <b>IGST(${
+                      parseInt(generalsetting.c_gst_pre) +
+                      parseInt(generalsetting.s_gst_pre)
+                    })%(+)</b>
                     </label>
                     <span class="float_right" style="wordBreak:keep-all;">${+Number(
-          convertamt(
-            ((parseFloat(paymentres.total_amount) +
-              parseFloat(paymentres.courier) +
-              parseFloat(paymentres.exp_charge) -
-              parseFloat(paymentres.dis_amt) -
-              parseFloat(paymentres.coupon_amt)) *
-              (parseInt(generalsetting.c_gst_pre) +
-                parseInt(generalsetting.s_gst_pre))) /
-            100
-          )
-        ).toFixed(2)}</span>
+                      convertamt(
+                        ((parseFloat(paymentres.total_amount) +
+                          parseFloat(paymentres.courier) +
+                          parseFloat(paymentres.exp_charge) -
+                          parseFloat(paymentres.dis_amt) -
+                          parseFloat(paymentres.coupon_amt)) *
+                          (parseInt(generalsetting.c_gst_pre) +
+                            parseInt(generalsetting.s_gst_pre))) /
+                          100
+                      )
+                    ).toFixed(2)}</span>
                   </div>
                   `
-      }
+                }
           `
-      : ""
-    }
-          ${customerdata.c_gst == 0 && customerdata.f_z_type != 0
-      ? `<div class="block total_class">
+              : ""
+          }
+          ${
+            customerdata.c_gst == 0 && customerdata.f_z_type != 0
+              ? `<div class="block total_class">
               <label>
-                <b>${customerdata.f_z_type == 1
-        ? "SEZ - Foregone GST (-)"
-        : `Overseas Payment - <br/>Foregone GST (-)`
-      }</b>
+                <b>${
+                  customerdata.f_z_type == 1
+                    ? "SEZ - Foregone GST (-)"
+                    : `Overseas Payment - <br/>Foregone GST (-)`
+                }</b>
               </label>
               <span class="float_right" style="wordBreak:keep-all;">
                 ${convertamt(
-        ((parseFloat(paymentres.total_amount) +
-          parseFloat(paymentres.courier) +
-          parseFloat(paymentres.exp_charge) -
-          parseFloat(paymentres.dis_amt) -
-          parseFloat(paymentres.coupon_amt)) *
-          (parseInt(generalsetting.c_gst_pre) +
-            parseInt(generalsetting.s_gst_pre))) /
-        100
-      )}
+                  ((parseFloat(paymentres.total_amount) +
+                    parseFloat(paymentres.courier) +
+                    parseFloat(paymentres.exp_charge) -
+                    parseFloat(paymentres.dis_amt) -
+                    parseFloat(paymentres.coupon_amt)) *
+                    (parseInt(generalsetting.c_gst_pre) +
+                      parseInt(generalsetting.s_gst_pre))) /
+                    100
+                )}
               </span>
             </div>
           `
-      : ``
-    }
-          ${paymentres.embassy_fees != 0
-      ? `<div class="block total_class">
+              : ``
+          }
+          ${
+            paymentres.embassy_fees != 0
+              ? `<div class="block total_class">
           <label><b>Embassy Fees</b></label>
           <span class="float_right"  style="wordBreak:keep-all;">${convertamt(
-        paymentres.embassy_fees
-      )}</span>
+            paymentres.embassy_fees
+          )}</span>
         </div>
     `
-      : ""
-    }
+              : ""
+          }
             <div class="block total_class">
             <label>
               <b>
-                Net Amount In ${convertdata.convert_type == 0
-      ? "USD"
-      : convertdata.convert_type == 1
-        ? "PSD"
-        : convertdata.convert_type == 2
-          ? "Euro"
-          : "INR"
-    }
+                Net Amount In ${
+                  convertdata.convert_type == 0
+                    ? "USD"
+                    : convertdata.convert_type == 1
+                    ? "PSD"
+                    : convertdata.convert_type == 2
+                    ? "Euro"
+                    : "INR"
+                }
               </b>
             </label>
             <span class="float_right" style="wordBreak:keep-all;">${convertamt(
-      paymentres.net_amt
-    )}</span>
+              paymentres.net_amt
+            )}</span>
           </div>
         </td>
       </tr>
@@ -665,10 +699,11 @@ module.exports = (
       <td class="right" colspan="4" style="width:65%; wordBreak:break-word;vertical-align: top;">
         <div>
           <h5 class="bold">Terms & Conditions :-</h5>
-          <p class="fsize">${settingdata.c_term_condition != null
-      ? settingdata.c_term_condition
-      : ""
-    }
+          <p class="fsize">${
+            settingdata.c_term_condition != null
+              ? settingdata.c_term_condition
+              : ""
+          }
             </p>
         </div>
       </td>

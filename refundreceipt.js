@@ -299,7 +299,7 @@ module.exports = (
                   <img
                   src=${`data:image/jpg;base64,${signatureAsBase64}`}
                     alt="img"
-                    width="150"
+                    width="110"
                     class="img_center"
                   />
                 </div>

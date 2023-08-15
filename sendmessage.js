@@ -157,7 +157,6 @@ async function messagesend(
   time = null
 ) {
   try {
-    console.log(attachment, pathname, "$$$$$$$$$");
     //type  1 => Send Mail & type 2 => Send SMS
     att = [];
     if (type == 1) {
@@ -198,10 +197,10 @@ async function messagesend(
 
         transporter.sendMail(mailOptions, (err, info) => {
           if (err) {
-            return console.log(err.message);
+            // return console.log(err.message);
           }
 
-          console.log("Message %s sent: %s", info, moment().format(
+          console.log("Message %s sent: %s", info.messageId, info.response, moment().format(
             "DD-MM-YYYY HH:mm:ss"
           ));
           resolve({
@@ -213,7 +212,7 @@ async function messagesend(
       return response;
     }
   } catch (error) {
-    console.log(error);
+    // console.log(error);
     return { status: 0, message: "Invalid Call Try Again Email Error" };
   }
 }
@@ -471,7 +470,7 @@ async function custommailsend(
 
         transporter.sendMail(mailOptions, (err, info) => {
           if (err) {
-            console.log(err, "**************");
+            // return console.log(err.message);
           }
 
           console.log("Message %s sent: %s", info.messageId, info.response, moment().format(
@@ -486,7 +485,7 @@ async function custommailsend(
       return response;
     }
   } catch (error) {
-    console.log(error, "%%%%%%%%#@@@@@@@@@@");
+    // console.log(error);
     return { status: 0, message: "Invalid Call Try Again Email Error" };
   }
 }
