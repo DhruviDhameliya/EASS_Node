@@ -1,14 +1,10 @@
 const con = require("./database");
 const moment = require("moment");
-var CryptoJS = require("crypto-js");
+
 async function login(email, pass, ip, otp) {
   try {
     let current_time = moment().format("HH:mm:ss");
     var date = moment().format("DD-MM-YYYY");
-    var auth_token = CryptoJS.AES.encrypt(
-      email + "_" + moment().format("DD-MM-YYYY HH:mm:ss"),
-      'my-secret-key@2001').toString();
-
     sql = `SELECT *,(SELECT b_name FROM branch where branch.branch_id=users.branch_id) as branch_name  FROM users WHERE (u_email = '${email}' AND password = md5('${pass}') AND loginotp = ${otp}) OR (u_name='${email}' AND password = md5('${pass}') AND loginotp = ${otp}) and deleted=0`;
 
     let response = await new Promise((resolve, reject) => {
@@ -26,7 +22,7 @@ async function login(email, pass, ip, otp) {
         if (result && result.length > 0) {
           sql1 = `SELECT * FROM user_permission,features WHERE features.f_id=user_permission.f_id and u_id=${result[0].u_id} and features.deleted=0`;
           con.query(sql1, function (err, res) {
-            sq12 = `UPDATE users SET check_in_status = '1',auth_token='${auth_token}' WHERE users.u_id = ${result[0].u_id}`;
+            sq12 = `UPDATE users SET check_in_status = '1' WHERE users.u_id = ${result[0].u_id}`;
 
             con.query(sq12, function (err, res) {
               if (err) {
@@ -51,7 +47,7 @@ async function login(email, pass, ip, otp) {
             test = {
               message: "Login Successfully",
               status: 1,
-              data: { ...result[0], auth_token: auth_token },
+              data: result[0],
               permission: res,
               uid: result[0].u_id,
               user_type: result[0].user_type,
@@ -207,9 +203,6 @@ async function login(email, pass, ip, otp) {
 
 async function customerLogin(email, pass) {
   try {
-    var auth_token = CryptoJS.AES.encrypt(
-      email + "_" + moment().format("DD-MM-YYYY HH:mm:ss"),
-      'my-secret-key@2001').toString();
     sql = `SELECT * FROM main_customer WHERE (m_c_email = '${email}' AND password = '${pass}' AND deleted = 0 ) OR (m_c_name='${email}' AND password = '${pass}' AND deleted = 0 )`;
     return new Promise((resolve, reject) => {
       con.query(sql, function (err, result) {
@@ -244,21 +237,10 @@ async function customerLogin(email, pass) {
                 };
                 resolve(test);
               } else {
-                let updateToken = `UPDATE main_customer SET auth_token='${auth_token}' WHERE main_customer.m_c_id = ${result[0].m_c_id}`;
-
-                con.query(updateToken, function (err, res) {
-                  if (err) {
-                    return err.message;
-                  }
-                  if (res.affectedRows > 0) {
-                    resolve({ status: 1 });
-                  }
-                });
                 test = {
                   message: "Login Successfully",
                   status: 1,
-                  data: { ...result[0], auth_token: auth_token },
-
+                  data: result[0],
                 };
                 resolve(test);
               }

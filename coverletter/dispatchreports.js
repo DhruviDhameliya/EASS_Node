@@ -68,7 +68,7 @@ module.exports = ({ settingdata, user_data, result, data }, imageAsBase64) => {
                                 
                                   ${` ${result.c_mo_no}`}
             
-                 </div>      
+                 </div>   
                           </td>
                           <td class="" align="center">
                           ${get(result.a_certificate_name)}

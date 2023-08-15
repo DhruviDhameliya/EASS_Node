@@ -84,8 +84,8 @@ module.exports = (
               <b>
                 <h4 style="margin:0px;">${country.country_name}</h4>
               </b>
-            </td>
-          </tr>`;
+                </td>
+            </tr>`;
           {
             country.translation_user &&
               country.translation_user.map((user) => {
@@ -93,7 +93,7 @@ module.exports = (
                 rows =
                   rows +
                   `<tr>
-                  <td style="padding:10px;">
+                <td style="padding:10px;">
                     <div
                       class="block "
                       style="margin-bottom: 5px !important;"
@@ -102,7 +102,7 @@ module.exports = (
                         <label>Name :</label>
                                  ${user.a_prefix} ${user.a_name}
                                  </b>
-                                 </div>
+                            </div>
                                  <div
                                    class="block"
                                    style="margin-bottom: 5px !important;"
@@ -111,7 +111,7 @@ module.exports = (
                                      <label>Process :</label>
                                    </b>
                                ${user.translation_type}
-                               </div>
+                            </div>
                                <div
                                  class="block"
                                  style="margin-bottom: 5px !important;"
@@ -119,9 +119,9 @@ module.exports = (
                                  <b>
                                    <label>Certificates:</label>
                                  </b>
-                                 <br />
+                              <br />
                               ${getcertificate(user.a_certificate_name, "0")}
-                              </div>
+                </div>
                               <div
                                 class="block"
                                 style="margin-bottom: 5px !important;"
@@ -129,11 +129,11 @@ module.exports = (
                                 <b>
                                   <label>Supporting Document:</label>
                                 </b>
-                                <br />
+                              <br />
                               ${getsupporting(user.supporting_doc_name)}
-                              </div>
-                              </td>
-                              <td class="" align="center">
+                 </div>
+                          </td>
+                          <td class="" align="center">
                           ${getcertificate(user.a_certificate_name, "1")}
                           </td>
                           <td class="" align="center">
@@ -163,8 +163,8 @@ module.exports = (
               <b>
                 <h4 style="margin:0px;">${country.country_name}</h4>
               </b>
-            </td>
-          </tr>`;
+                </td>
+            </tr>`;
           {
             country.translation_users &&
               country.translation_users.map((user) => {
@@ -172,17 +172,17 @@ module.exports = (
                 rows =
                   rows +
                   `<tr>
-                  <td style="padding:10px;">
+                <td style="padding:10px;">
                     <div
                       class="block "
                       style="margin-bottom: 5px !important;"
                     >
                       <b>
                         <label>Name :</label>
-                          ${user.a_prefix} ${user.a_name}
+                                 ${user.a_prefix} ${user.a_name}
                           </b>
-                          </div>
-                         
+                            </div>
+                             
                           <div
                             class="block"
                             style="margin-bottom: 5px !important;"
@@ -190,9 +190,9 @@ module.exports = (
                             <b>
                               <label>Certificates:</label>
                             </b>
-                            <br />
+                              <br />
                               ${getcertificates(user.a_certificate_name, "0")}
-                              </div>
+                </div>
                               <div
                                 class="block"
                                 style="margin-bottom: 5px !important;"
@@ -201,8 +201,8 @@ module.exports = (
                                   <label>Reason :</label>
                                 </b>
                                 <br />${user.reason}
-                                </div>
-                              </td>
+                 </div>
+                          </td>
                           <td class="" align="center">
                           ${getcertificates(user.a_certificate_name, "1")}
                           </td>
@@ -226,17 +226,17 @@ module.exports = (
      <head>
         <style>
         @import url('../../fonts/Poppins-ExtraLight.ttf');
-        *{
-          font-size: 14px;
-          font-family: "Poppins", sans-serif;
-        }
-            html {
-              zoom: 0.60;
-            }
-           .card{
-              background: #fff;
-              margin:50px;
-            }
+      *{
+        font-size: 14px;
+        font-family: "Poppins", sans-serif;
+      }
+          html {
+            zoom: 0.60;
+          }
+         .card{
+            background: #fff;
+            margin:50px;
+          }
             h3, .h3 {
               font-size: 1.75rem;
           }
@@ -368,7 +368,7 @@ module.exports = (
      style="border-collapse: collapse;margin-bottom:0px !important"
    >
       <tr>
-        <td colspan="8" style="padding:0">
+          <td colspan="8" style="padding:0">
           <div class="flex"> 
               <div>
                 <img style="
@@ -389,32 +389,32 @@ module.exports = (
                   </div>
                 </div>
                 <div style="word-break: break-word;" class="fsize">
-                ${settingdata.address != null ? settingdata.address : ""}
+              ${settingdata.address != null ? settingdata.address : ""}
                 </div>
-                ${
-                  user_data.mobile != null
-                    ? `<div class="fsize">
+              ${
+                user_data.mobile != null
+                  ? `<div class="fsize">
                       <label class="fsize">Contact No : </label>
                       ${user_data.mobile}
                     </div>`
-                    : ``
-                }
+                  : ``
+              }
               </div>
           </div>
-        </td>
-      </tr>
-      <tr class="">
-          <td colspan="8" align="center">
+      </td>
+    </tr>
+            <tr class="">
+            <td colspan="8" align="center">
             <h5 style="margin-bottom : 0px;">
-              <b>Translation Cover Letter</b>
+            <b>Translation Cover Letter</b>
             </h5>
-          </td>
-        </tr>
+            </td>
+            </tr>
       ${
         country && country.length > 0
           ? `
           
-        <tr style="padding: 0px;">
+            <tr style="padding: 0px;">
         <td colspan="2" style="padding: 0px;">
           <table
             border="1"
@@ -423,7 +423,7 @@ module.exports = (
             style="width:100%;border-collapse: collapse;"
           >
             <tr class="heading-row">
-              <th class=""> Content</th>
+                            <th class=""> Content</th>
               <th class="" width="6%" align="center">
                 No of Docs
               </th>
@@ -433,35 +433,35 @@ module.exports = (
               <th class="" width="6%" align="center">
                 Verified By You
               </th>
-            </tr>
-                            ${getrow()}
-                            <tr>
+                        </tr>
+                        ${getrow()}
+                        <tr>
                             <td class="" align="right">
-                              <div class="block  m-2">Total Document</div>
+                                <div class="block  m-2">Total Document</div>
                             </td>
-            
+
                             <td class="" align="center">
-                              ${total}
+                                 ${total}
                             </td>
                             <td align="center"></td>
                             <td align="center"></td>
-                          </tr>
-                        </table>
-                      </td>
+                       </tr>
+                </table>
+            </td>
                     </tr> `
           : ""
       }
       ${
         ulist && ulist.length > 0
           ? `
-          <tr class="">
-          <td colspan="8" align="center">
-            <h5 style="margin-bottom : 0px;">
-              <b>Under Correction</b>
-            </h5>
-          </td>
-        </tr>
-        <tr style="padding: 0px;">
+        <tr class="">
+        <td colspan="8" align="center">
+        <h5 style="margin-bottom : 0px;">
+        <b>Under Correction</b>
+        </h5>
+        </td>
+    </tr>
+    <tr style="padding: 0px;">
         <td colspan="2" style="padding: 0px;">
           <table
             border="1"
@@ -470,7 +470,7 @@ module.exports = (
             style="width:100%;border-collapse: collapse;"
           >
             <tr class="heading-row">
-              <th class=""> Content</th>
+                        <th class=""> Content</th>
               <th class="" width="6%" align="center">
                 No of Docs
               </th>
@@ -480,22 +480,22 @@ module.exports = (
               <th class="" width="6%" align="center">
                 Verified By You
               </th>
-            </tr>
+                    </tr>
                     ${getrows()}
                     <tr>
-                    <td class="" align="right">
-                      <div class="block  m-2">Total Document</div>
-                    </td>
-    
-                    <td class="" align="center">
-                      ${totals}
-                    </td>
+                        <td class="" align="right">
+                            <div class="block  m-2">Total Document</div>
+                        </td>
+
+                        <td class="" align="center">
+                             ${totals}
+                        </td>
                     <td align="center"></td>
                     <td align="center"></td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
+                   </tr>
+            </table>
+        </td>
+    </tr>
           `
           : ""
       }`;

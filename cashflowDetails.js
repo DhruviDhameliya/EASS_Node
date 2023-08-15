@@ -7,9 +7,9 @@ module.exports = ({ cashflow_data, data }) => {
     {
       cashflow_data
         ? cashflow_data.map((cashflow, index) => {
-            rows =
-              rows +
-              `
+          rows =
+            rows +
+            `
         <tbody>
         <tr class="border heading-row">
                   <td class="right" align="center" style="padding: 15px">
@@ -32,7 +32,7 @@ module.exports = ({ cashflow_data, data }) => {
                   </td>
                 </tr> 
                 </tbody>`;
-          })
+        })
         : "";
     }
 
@@ -188,9 +188,8 @@ module.exports = ({ cashflow_data, data }) => {
         >
         <tr class="border">
                 <td colspan="6" align="center">
-                <h4 style="margin: 10px 0"><b>Cashflow Details of ${
-                  data.u_name
-                }</b></h4>
+                <h4 style="margin: 10px 0"><b>Cashflow Details of ${data.u_name
+    }</b></h4>
                 </td>
             </tr>
             <tr class="border">
